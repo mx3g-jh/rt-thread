@@ -343,7 +343,7 @@ def PrepareBuilding(env, root_directory, has_libcpu=False, remove_components = [
         exit(0)
     if platform.system() != 'Windows':
         if GetOption('menuconfig'):
-            from menuconfig import menuconfig
+            from menuconfig_rt import menuconfig
             menuconfig(Rtt_Root)
             exit(0)
 
